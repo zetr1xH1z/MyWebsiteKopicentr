@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Печать для вас — О нас</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Kanit:wght@300;400;500;600;700&family=Lalezar&display=swap" rel="stylesheet">
+</head>
+<body style="padding-bottom: 117px">
+
+    <div class="top-bar">
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="catalog.html">Каталог услуг</a>
+            <a href="about.html">О нас</a>
+        </nav>
+    </div>
+
+    <div class="container">
+
+            <div class="section-header">
+                <div class="section-title-box">О нас</div>
+            </div>
+
+            <div class="about-text">
+                Наш копицентр предоставляет услуги печати, копирования, сканирования и постпечатной обработки документов. Мы работаем с физическими и юридическими лицами, гарантируем высокое качество печати, оперативное выполнение заказов и индивидуальный подход к каждому клиенту. Используем современное оборудование и качественные расходные материалы.
+            </div>
+
+                <div class="info-block">
+                    <h3>Режим работы</h3>
+                    <div class="info-item">Понедельник – Пятница: 10:00 – 22:00</div>
+                    <div class="info-item">Суббота: 11:00 – 21:00</div>
+                    <div class="info-item">Воскресенье: выходной</div>
+                </div>
+
+                <div class="info-block contacts">
+                    <h3>Контактные данные</h3>
+                    <div class="info-item"><strong>Телефон:</strong> +7 (911) 741-42-79 <i class="fas fa-phone" style="color: #2c5aa0;"></i></div>
+                    <div class="info-item"><strong>Vk:</strong> <a href="https://vk.com/prst_maks" target="_blank">vk.com/prst_maks</a> <i class="fab fa-vk" style="color: #2c5aa0;"></i></div>
+                    <div class="info-item"><strong>Email:</strong> <a href="mailto:infokopicentr.ru">infokopicentr.ru</a> <i class="fas fa-envelope" style="color: #666;"></i></div>
+                </div>
+            
+            <div class="info-block" style="margin-bottom: 20px; text-align: center;">
+                <h3>Адрес</h3>
+                <div class="info-item">проспект Просвещения, 43,<br>Санкт-Петербург, 194291</div>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeffb1e7edc9c3eb57d58ef4d4c48f856938e628720200d69014514585547754f&amp;source=constructor"></iframe>
+            </div>
+
+<div class="reviews-section">
+    <div class="section-header3" onclick="toggleReviews()" style="cursor: pointer;">
+        <div class="section-title-box">
+            Отзывы 
+            <span id="reviews-arrow" style="display: inline-block; transition: transform 0.3s;">▼</span>
+        </div>
+    </div>
+
+    <div class="reviews-container" id="reviews-box">
+        <div class="reviews-carousel" id="reviewsCarousel">
+            
+            <div class="review-side" onclick="moveToCenter(0)">
+                <div class="reviewer-name">Алина Потапова</div>
+                <div class="stars">★★★★★</div>
+                <div class="review-text">Отличный сервис и качество печати!</div>
+                <div class="review-date">20.03.2026</div>
+            </div>
+
+            <div class="review-center" id="centerReview">
+                <div class="reviewer-name">Кирилл Токарев</div>
+                <div class="stars">★★★★★</div>
+                <div class="review-text">Хочу выразить огромную благодарность сотрудникам за безупречное обслуживание и профессионализм терпения.</div>
+                <div class="review-date">05.03.2026</div>
+            </div>
+
+            <div class="review-side" onclick="moveToCenter(2)">
+                <div class="reviewer-name">Петр Васильев</div>
+                <div class="stars">★★★★☆</div>
+                <div class="review-text">Хорошее качество и не долгое выполнение заказа.</div>
+                <div class="review-date">30.11.2025</div>
+            </div>
+
+        </div>
+        <div class="slider-track">
+        <div class="slider-thumb" id="reviewSliderThumb" style="width: 33.3%; left: 33.3%;"></div>
+    </div>
+    </div>
+</div>
+    </div>
+    <footer class="site-footer">
+        <span class="footer-left">Компания «Печать для вас»</span>
+        <span class="footer-center">© 2025-2026<br>Все права защищены.</span>
+        <span class="footer-right">Company «Print for you»</span>
+    </footer>
+    <script src="calculator.js"></script>
+</body>
+</html>
